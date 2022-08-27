@@ -8,6 +8,9 @@ class Engine:
         self.screen = pg.display.set_mode(self.RES)
         self.clock = pg.time.Clock()
 
+    def input(self):
+        pass
+
     def update(self):
         pass
 
@@ -16,6 +19,7 @@ class Engine:
 
     def run(self):
         while True:
+            self.input()
             self.update()
             self.draw()
             [exit() for i in pg.event.get() if i.type == pg.QUIT]
