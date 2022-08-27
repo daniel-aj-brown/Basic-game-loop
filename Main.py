@@ -1,5 +1,7 @@
 import pygame as pg
 
+BLUE = (0, 114, 178)
+
 class Engine:
     def __init__(self, width, height, fps):
         pg.init()
@@ -15,7 +17,7 @@ class Engine:
         pass
 
     def draw(self):
-        self.screen.fill(pg.Color("darkslategray"))
+        self.screen.fill(BLUE)
 
     def run(self):
         while True:
